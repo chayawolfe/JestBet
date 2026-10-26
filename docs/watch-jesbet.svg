@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Watch the JesBet introduction video">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101826"/>
+      <stop offset="55%" stop-color="#0c1118"/>
+      <stop offset="100%" stop-color="#1a1408"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#d4b06a" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#d4b06a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0d48a"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#glow)"/>
+  <rect x="36" y="36" width="1208" height="648" rx="28" fill="none" stroke="rgba(212,176,106,0.28)" stroke-width="2"/>
+  <text x="640" y="168" text-anchor="middle" fill="#d4b06a" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="8">ONLINE CASINO + SPORTSBOOK</text>
+  <text x="640" y="268" text-anchor="middle" fill="#f4efe4" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700">JesBet</text>
+  <text x="640" y="328" text-anchor="middle" fill="#9aa6b5" font-family="Arial, Helvetica, sans-serif" font-size="26">MERN stack � Timeless Tech casino API � Betradar sports</text>
+  <circle cx="640" cy="478" r="64" fill="url(#gold)"/>
+  <polygon points="622,448 622,508 678,478" fill="#1a1408"/>
+  <text x="640" y="592" text-anchor="middle" fill="#e8edf4" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Watch the introduction</text>
+  <text x="640" y="632" text-anchor="middle" fill="#9aa6b5" font-family="Arial, Helvetica, sans-serif" font-size="20">Click to play the JesBet walkthrough</text>
+</svg>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JesBet — Online Casino &amp; Sportsbook | MERN, Timeless Tech, Betradar</title>
+  <meta name="description" content="Watch the JesBet (JestBet) introduction video. Online casino and sports betting platform built with the MERN stack, Timeless Tech casino API, and Betradar sports API. Contact @aldoboyer." />
+  <meta name="author" content="Aldo Boyer" />
+  <meta name="keywords" content="JesBet, JestBet, online casino, sportsbook, sports betting platform, MERN stack, Timeless Tech, TimelessTech, Betradar, Betrader, iGaming, white label casino, hire casino developer" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aldoboyer.github.io/sports-casino-platform/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JesBet — Online Casino &amp; Sportsbook Introduction" />
+  <meta property="og:description" content="Video walkthrough of JesBet: MERN casino + sportsbook with Timeless Tech and Betradar. Available for customer projects." />
+  <meta property="og:url" content="https://aldoboyer.github.io/sports-casino-platform/" />
+  <meta property="og:image" content="https://aldoboyer.github.io/sports-casino-platform/watch-jesbet.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JesBet introduction video" />
+  <meta name="twitter:description" content="Online casino and sportsbook — MERN, Timeless Tech, Betradar. Contact @aldoboyer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c1118;
+      --panel: #141b24;
+      --line: rgba(255, 255, 255, 0.08);
+      --gold: #d4b06a;
+      --text: #e8edf4;
+      --muted: #9aa6b5;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body {
+      font-family: "Instrument Sans", system-ui, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      background:
+        radial-gradient(900px 500px at 10% -10%, rgba(212, 176, 106, 0.14), transparent 55%),
+        radial-gradient(700px 400px at 100% 0%, rgba(27, 79, 114, 0.35), transparent 50%),
+        var(--bg);
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(980px, calc(100% - 40px)); margin: 0 auto; padding: 48px 0 80px; }
+    header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 48px; }
+    .brand { font-weight: 700; letter-spacing: 0.04em; font-size: 1.15rem; }
+    .brand span { color: var(--gold); }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.95rem; }
+    nav a { color: var(--text); }
+    h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: clamp(2.1rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 600;
+      margin: 0 0 16px;
+    }
+    .lede { font-size: 1.15rem; color: var(--muted); max-width: 42rem; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 36px; }
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-gold { background: var(--gold); color: #1a1408; }
+    .btn-ghost { border: 1px solid var(--line); color: var(--text); background: transparent; }
+    .player {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+    video, .fallback {
+      width: 100%;
+      display: block;
+      background: #000;
+      aspect-ratio: 16 / 9;
+    }
+    .fallback {
+      display: none;
+      place-items: center;
+      text-align: center;
+      padding: 48px 24px;
+      color: var(--muted);
+    }
+    .fallback.show { display: grid; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 40px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    section { margin-top: 56px; }
+    h2 { font-size: 1.4rem; margin: 0 0 12px; }
+    .contact {
+      background: linear-gradient(180deg, rgba(212,176,106,0.08), transparent), var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+    }
+    footer { margin-top: 56px; color: var(--muted); font-size: 0.88rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span>JesBet</span></div>
+      <nav>
+        <a href="https://github.com/aldoboyer/sports-casino-platform">README</a>
+        <a href="https://github.com/aldoboyer">@aldoboyer</a>
+        <a href="https://github.com/aldoboyer/sports-casino-platform/issues/new?template=contact.yml">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <p class="lede" style="margin-bottom: 10px;">JesBet · JestBet · online casino + sportsbook · available for customers</p>
+      <h1>JesBet introduction — watch the casino and sportsbook in one product.</h1>
+      <p class="lede">
+        Hello — I’m Aldo. This video introduces <strong style="color: var(--text);">JesBet</strong>,
+        an online casino and sports betting platform I built with MongoDB, Express, React, and Node.js.
+        Casino content comes from the <strong style="color: var(--text);">Timeless Tech</strong> API.
+        Sports data comes from <strong style="color: var(--text);">Betradar</strong>.
+      </p>
+      <div class="pills">
+        <span class="pill">JesBet</span>
+        <span class="pill">MERN stack</span>
+        <span class="pill">Timeless Tech casino API</span>
+        <span class="pill">Betradar sports API</span>
+        <span class="pill">White-label iGaming</span>
+      </div>
+      <div class="actions">
+        <a class="btn btn-gold" href="https://github.com/aldoboyer/sports-casino-platform/issues/new?template=contact.yml">Start a customer project</a>
+        <a class="btn btn-ghost" href="https://github.com/aldoboyer/sports-casino-platform">Read the JesBet README</a>
+      </div>
+
+      <div class="player">
+        <video id="intro" controls playsinline preload="metadata" poster="./watch-jesbet.svg">
+          <source src="../video.mp4" type="video/mp4" />
+          <source src="https://raw.githubusercontent.com/aldoboyer/sports-casino-platform/main/media/intro.mp4" type="video/mp4" />
+        </video>
+        <div class="fallback" id="fallback">
+          <div>
+            <strong style="color: var(--text); display: block; margin-bottom: 8px;">JesBet introduction video</strong>
+            If the player is empty, open
+            <a href="https://github.com/aldoboyer/sports-casino-platform/tree/main/media">media/intro.mp4</a>
+            in the repository.
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>JesBet Sportsbook</h3>
+          <p>Fixtures, markets, and live odds through Betradar (Betrader sports API), with a bet slip for pre-match and in-play.</p>
+        </article>
+        <article class="card">
+          <h3>JesBet Casino</h3>
+          <p>Timeless Tech aggregator for slots, live casino, and crash titles from one lobby and one wallet.</p>
+        </article>
+        <article class="card">
+          <h3>MERN product</h3>
+          <p>Auth, wallet ledger, realtime sockets, and admin — the shape of a launch-ready operator site.</p>
+        </article>
+      </div>
+
+      <section class="contact">
+        <h2>Customers — I would like to hear from you</h2>
+        <p class="lede">
+          Looking for JesBet, a white-label sportsbook, a Timeless Tech casino integration, or a Betradar developer?
+          Anyone can open an inquiry. Leave your name and the best way to reach you.
+        </p>
+        <div class="actions" style="margin: 20px 0 0;">
+          <a class="btn btn-gold" href="https://github.com/aldoboyer/sports-casino-platform/issues/new?template=contact.yml">Open a project inquiry</a>
+          <a class="btn btn-ghost" href="https://github.com/aldoboyer">github.com/aldoboyer</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Thank you for watching JesBet. — Aldo ·
+      <a href="https://github.com/aldoboyer">github.com/aldoboyer</a><br />
+      Portfolio introduction only. Not a live bookmaker. Please follow local law and play responsibly.
+    </footer>
+  </div>
+  <script>
+    const video = document.getElementById("intro");
+    const fallback = document.getElementById("fallback");
+    video.addEventListener("error", () => fallback.classList.add("show"));
+  </script>
+</body>
+</html>
